@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMin(arr,vitri) {
+if(arr.length==0){
+    return -1;
+}
+        let min=arr[0];
+vitri=0;
+for( let i=1;i<arr.length-1;i++){
+    if(min>arr[i]){
+        min=arr[i];
+        vitri=i;
+    }
+}
+return vitri;
+    }
+    let arr1=[3,5,1,8,-3,7,8];
+    let min1=findMin(arr1);
+    alert(min1);
+    let arr2=[7,12,6,9,20,56,89];
+    let min2=findMin(arr2);
+    alert(min2);
+    let arr3=[];
+    let min3=findMin(arr3);
+    alert(min3);
+    let arr4=[0,0,0,0,0,0];
+    let min4=findMin(arr4);
+    alert(min4);
+    //đã sửa thành hiện vị trí, nếu hàm chả về -1 tức là mảng rỗng;
+</script>
+</body>
+</html>
